@@ -101,6 +101,25 @@ nav .links:hover {
   box-shadow: 0px 0px 5px 1px rgb(92, 92, 92);
 }
 
+.projects
+{
+
+  
+}
+.project-container
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects .tile
+{
+  flex: 25%;
+
+}
+
+
+
 @keyframes leftToRight {
   from {
     left: 0;
