@@ -12,6 +12,26 @@ html {
 .links, a{
   text-decoration: none;
 }
+.html5
+{
+  color: orange;
+}
+.css
+{
+  color: rgb(0, 132, 209)
+
+}
+.js{
+  color: rgb(196, 196, 0)
+}
+.react
+{
+color: rgb(0, 145, 255);
+}
+.bootstrap{
+color: rgb(111, 0, 255);
+}
+
 
 body {
 background: #000;
@@ -22,7 +42,7 @@ background: #000;
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .App {
-  height: 100vh;
+ 
   background: #000;
 }
 
@@ -51,6 +71,9 @@ nav .links:hover {
   border: 1px solid var(--textColor);
 }
 
+.home{
+  height: 100vmin;
+}
 .info {
   width: 80%;
   height: 80%;
@@ -114,8 +137,8 @@ nav .links:hover {
   margin:1rem;
   padding: 2rem;
   box-shadow: 1px 1px 10px rgb(55, 55, 55);
-  animation-name: popOut;
-  animation-duration: 1s;
+  animation-name: fadeIn;
+  animation-duration: 2s;
 }
 
 
@@ -136,26 +159,68 @@ nav .links:hover {
 
 }
 
-@keyframes popOut {
+/* **************Skill section******************** */
+.skills
+{
+  height: 100vh;
+  text-align: center;
+  padding: 2rem;
+
+}
+.skills h1
+{
+    font-size: xxx-large;
+    font-weight: lighter;
+}
+.skills-section
+{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+
+
+}
+.skills-section .skill
+{
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  width: auto;
+  border-radius: var(--border5px);
+  box-shadow: 2px 2px 1px 2px rgb(43, 43, 43);
+  
+}
+
+@keyframes fadeIn {
   from {
+
+    opacity: 0.2;
   }
   to {
+    opacity: 1;
   }
 }
 
 @keyframes leftToRight {
   from {
+    opacity: 0.2;
     left: 0;
   }
   to {
     left: 4rem;
+    opacity: 1;
   }
 }
 @keyframes rightToLeft {
   from {
+    opacity: 0.2;
     right: 0;
   }
   to {
     right: 4rem;
+    opacity: 1;
   }
 }
