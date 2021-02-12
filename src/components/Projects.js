@@ -23,7 +23,7 @@ const Projects = () => {
               <a href={data.appCode}>View Code</a>
             </div>
           );
-        })}
+        })} 
       </div>
     </div>
   );
