@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import AboutMe from "./components/AboutMe";
 import Blogs from "./components/Blogs";
 import Contact from "./components/Contact";
@@ -11,7 +11,7 @@ import "./styles.css";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="App">
         <Navbar/>
        
@@ -26,6 +26,6 @@ export default function App() {
         <Skills/>
 
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
