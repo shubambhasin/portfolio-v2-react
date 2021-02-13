@@ -2,9 +2,7 @@ import React from "react";
 import {
   FaArrowDown,
   FaGithub,
-  FaMailBulk,
-  FaPhone,
-  FaRProject
+  FaPhone
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Skills from "./Skills";

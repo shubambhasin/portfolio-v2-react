@@ -69,7 +69,7 @@ nav .links {
   user-select: none;
   animation-name: colorShift;
   animation-duration: 2s;
-  transition: 0.5s ease-in;
+  transition: 0.3s ease-in;
 }
 
 nav .links:hover {
@@ -84,7 +84,7 @@ nav .links:hover {
   width: 80%;
   height: 80%;
   position: absolute;
-  left: 4rem;
+  left: 6rem;
   animation-name: leftToRight;
   animation-duration: 2s;
   transition: ease-in;
@@ -118,7 +118,7 @@ nav .links:hover {
 
 .go-to-project {
   position: absolute;
-  right: 4rem;
+  right: 6rem;
   bottom: 10rem;
   animation-name: rightToLeft;
   animation-duration: 2s;
@@ -430,7 +430,7 @@ height: 90vh;
     left: 0;
   }
   to {
-    left: 4rem;
+    left: 6rem;
     opacity: 1;
   }
 }
@@ -440,7 +440,7 @@ height: 90vh;
     right: 0;
   }
   to {
-    right: 4rem;
+    right: 6rem;
     opacity: 1;
   }
 }
