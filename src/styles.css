@@ -75,9 +75,9 @@ nav .links {
 nav .links:hover {
   border: 1px solid var(--textColor);
 }
-
+/* ***************home section =****************** */
 .home {
-  height: 100vmin;
+  height: 100vh;
   position: relative;
 }
 .info {
@@ -119,7 +119,7 @@ nav .links:hover {
 .go-to-project {
   position: absolute;
   right: 4rem;
-  bottom: 4rem;
+  bottom: 10rem;
   animation-name: rightToLeft;
   animation-duration: 2s;
 }
@@ -136,6 +136,12 @@ nav .links:hover {
   border-radius: var(--border5px);
   box-shadow: 0px 0px 5px 1px rgb(92, 92, 92);
 }
+.home .go-to-project .links-circle {
+  visibility: hidden;
+  color: white;
+}
+
+/* ******************************************** */
 
 .projects {
 }
@@ -173,22 +179,25 @@ nav .links:hover {
   height: 100vh;
   text-align: center;
   padding: 2rem;
+  width: 80vw;
+  margin: 0 auto;
 }
 .skills h1 {
   font-size: xxx-large;
   font-weight: lighter;
 }
 .skills-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
 .skills-section .skill {
   padding: 1rem;
+  flex: 20%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 1rem;
   width: auto;
   border-radius: var(--border5px);
   box-shadow: 0px 0px 1px 2px rgb(43, 43, 43);
@@ -242,6 +251,13 @@ nav .links:hover {
 
 /* *****************media queries********************** */
 
+@media screen and (max-width: 1085px) {
+  .go-to-project {
+    right: 1rem;
+    bottom: 10rem;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .blogs .blog-container {
     width: 75%;
@@ -250,6 +266,10 @@ nav .links:hover {
 @media screen and (max-width: 775px) {
   .blogs .blog-container {
     width: 80%;
+  }
+  .go-to-project {
+    right: 1rem;
+    bottom: 8rem;
   }
 }
 @media screen and (max-width: 625px) {
@@ -263,7 +283,89 @@ nav .links:hover {
   .blogs .blog-container {
     width: 80%;
   }
+
+  .home .go-to-project .links {
+    border-radius: 50%;
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+  nav #contact {
+
+    display: none;
+
+  }
+
+  .home .go-to-project .links-circle {
+    visibility: visible;
+    margin: 2rem;
+    color: white;
+  }
+
+  .go-to-project {
+    right: 2rem;
+    bottom: 6rem;
+  }
 }
+
+/* ************Home*********** */
+@media screen and (max-width: 585px) {
+  .home {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+justify-content: center;
+height: 90vh;
+  }
+
+  .info {
+    align-content: center;
+    justify-self: center;
+
+    position: static;
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    animation-name: leftToRight;
+    animation-duration: 2s;
+    transition: ease-in;
+  }
+
+  .info h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 4.5rem;
+    font-weight: 100;
+  }
+  .info .button {
+    top: 2rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--textColor);
+    color: white;
+    text-decoration: none;
+  }
+
+  .go-to-project {
+    position: static;
+    animation-name: rightToLeft;
+    animation-duration: 2s;
+    justify-self: center;
+  }
+  .go-to-project .links {
+    color: white;
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--textColor);
+    transition: border 0.3s;
+  }
+  .go-to-project .links:hover {
+    color: var(--textColor);
+    border: 1px solid black;
+    border-radius: var(--border5px);
+    box-shadow: 0px 0px 5px 1px rgb(92, 92, 92);
+  }
+}
+
 @media screen and (max-width: 530px) {
   nav {
     padding: 0.5rem;
@@ -271,6 +373,13 @@ nav .links:hover {
   nav .links {
     margin: 0.1rem;
   }
+
+  .info h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 4rem;
+    font-weight: 100;
+  }
+
   .blogs .blog-container {
     width: 85%;
   }
@@ -284,16 +393,28 @@ nav .links:hover {
     font-size: 13px;
     padding: 0.5rem;
   }
+  .info h1 {
+    font-size: 3.5rem;
+  }
 
   .blogs .blog-container {
     width: 90%;
   }
-  
+
   .blogs .blog-container .author-info h1 {
     font-size: 25px;
   }
 }
 
+@media screen and (max-width: 410px)
+{ .info h1 {
+  font-size: 3rem;
+  }
+
+
+
+}
+/* ******************keyframes***************** */
 @keyframes fadeIn {
   from {
     opacity: 0.2;
