@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles.css";
 import { FaBootstrap, FaCss3, FaHtml5, FaJs, FaReact } from "react-icons/fa";
+import { DiPhotoshop } from 'react-icons/di'
 import "../styles.css"
 const Skills = () => {
   return (
@@ -13,7 +14,7 @@ const Skills = () => {
           <p>HTML</p>
         </div>
         <div className="skill">
-          <FaCss3 size={84}  className="css" />
+          <FaCss3 size={70}  className="css" />
           <p>CSS</p>
         </div>
         <div className="skill">
@@ -28,6 +29,12 @@ const Skills = () => {
           <FaBootstrap size={84}  className="bootstrap" />
           <p>Bootstrap</p>
         </div>
+        <div className="skill">
+          <DiPhotoshop size={84} className="photoshop"/>
+          <p>Adobe Photoshop</p>
+        </div>
+
+
       </div>
     </div>
   );

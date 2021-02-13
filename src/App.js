@@ -5,7 +5,6 @@ import Contact from "./components/Contact";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
-import Skills from "./components/Skills";
 
 import "./styles.css";
 
@@ -23,7 +22,7 @@ export default function App() {
           <Route path="/projects" component={Projects}/>
           <Route path="/" component={Home} />
         </Switch>
-        <Skills/>
+        
 
       </div>
     </HashRouter>
