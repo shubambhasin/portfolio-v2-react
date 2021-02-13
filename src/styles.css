@@ -10,43 +10,37 @@ html {
   --border5px: 5px;
   --border10px: 10px;
 }
-.links, a{
+.links,
+a {
   text-decoration: none;
 }
-hr
-{
-  margin: 3rem 0rem;
-border-top: 1px solid rgb(168, 168, 168);
-
+hr {
+  margin: 2rem 0rem;
+  border-top: 1px solid rgb(168, 168, 168);
 }
 
 /* *********icons************** */
-.html5
-{
+.html5 {
   color: orange;
 }
-.css
-{
-  color: rgb(0, 132, 209)
-
+.css {
+  color: rgb(0, 132, 209);
 }
-.js{
-  color: rgb(196, 196, 0)
+.js {
+  color: rgb(196, 196, 0);
 }
-.react
-{
-color: rgb(0, 145, 255);
+.react {
+  color: rgb(0, 145, 255);
 }
-.bootstrap{
-color: rgb(111, 0, 255);
+.bootstrap {
+  color: rgb(111, 0, 255);
 }
-.photoshop
-{
-  color: rgb(0, 102, 255)
+.photoshop {
+  color: rgb(0, 102, 255);
 }
 /* *******************main****************************** */
 body {
-background: #000;
+  background: #000;
   color: white;
   margin: 0;
   padding: 0;
@@ -54,7 +48,6 @@ background: #000;
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .App {
- 
   background: #000;
 }
 
@@ -83,7 +76,7 @@ nav .links:hover {
   border: 1px solid var(--textColor);
 }
 
-.home{
+.home {
   height: 100vmin;
   position: relative;
 }
@@ -102,14 +95,12 @@ nav .links:hover {
   font-size: 5rem;
   font-weight: 100;
 }
-.info .button
-{
+.info .button {
   top: 2rem;
   padding: 0.5rem 1rem;
   border: 1px solid var(--textColor);
   color: white;
   text-decoration: none;
-
 }
 
 .contact {
@@ -156,54 +147,43 @@ nav .links:hover {
 
 .projects .tile {
   flex: 25%;
-  margin:1rem;
+  margin: 1rem;
   padding: 2rem;
   box-shadow: 1px 1px 10px rgb(55, 55, 55);
   animation-name: fadeIn;
   animation-duration: 2s;
 }
 
-
 .projects .tile h1 {
   font-size: 2rem;
   font-weight: lighter;
 }
-.projects .tile img
-{
+.projects .tile img {
   width: 100%;
 }
-.projects .tile a
-{
+.projects .tile a {
   color: white;
   margin: 0.5rem;
   border: 1px solid white;
   padding: 0.5rem;
-
 }
 
 /* **************Skill section******************** */
-.skills
-{
+.skills {
   height: 100vh;
   text-align: center;
   padding: 2rem;
-
 }
-.skills h1
-{
-    font-size: xxx-large;
-    font-weight: lighter;
+.skills h1 {
+  font-size: xxx-large;
+  font-weight: lighter;
 }
-.skills-section
-{
-
+.skills-section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
-
 }
-.skills-section .skill
-{
+.skills-section .skill {
   padding: 1rem;
   display: flex;
   justify-content: flex-start;
@@ -213,59 +193,109 @@ nav .links:hover {
   border-radius: var(--border5px);
   box-shadow: 0px 0px 1px 2px rgb(43, 43, 43);
   transition: 0.5s ease;
-  
 }
-.skills-section .skill:hover
-{
-transform: scale(1.05);
-box-shadow: 0px 0px 5px 2px rgb(201, 201, 201);
-
-  
-
-
+.skills-section .skill:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 5px 2px rgb(201, 201, 201);
 }
 
 /* ****************blogs section***************** */
 
-.blogs
-{
-
+.blogs {
   background: #d1dce7;
 
   display: flex;
   justify-content: center;
   color: var(--text-grey);
-
 }
-.blogs .blog-container
-{
+.blogs .blog-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   width: 70%;
   margin: 2rem auto;
 }
-.blogs .blog-container .blog-header h1
-{
+.blogs .blog-container .author-info {
+  margin-left: 1.5rem;
+}
+.blogs .blog-container .author-info .social a {
+  margin: 0px 5px;
+  color: rgb(184, 0, 9);
+}
 
+.blogs .blog-container .blog-header h1 {
   cursor: pointer;
   color: var(--text-grey);
   font-size: x-large;
   font-weight: bold;
-
 }
-.blogs .blog-container .blog-tile
-{
+.blogs .blog-container .blog-tile {
   padding: 0.5rem;
   margin: 0rem 1rem;
   animation-name: fadeIn;
   animation-duration: 2s;
 }
-.blogs .blog-container .blog-tile .read-more
-{
-color: rgb(36, 36, 48);
+.blogs .blog-container .blog-tile .read-more {
+  color: rgb(36, 36, 48);
+}
+
+/* *****************media queries********************** */
+
+@media screen and (max-width: 900px) {
+  .blogs .blog-container {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 775px) {
+  .blogs .blog-container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 625px) {
+  nav {
+    padding: 0.5rem;
+  }
+  nav .links {
+    margin: 0.5rem;
+  }
+
+  .blogs .blog-container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 530px) {
+  nav {
+    padding: 0.5rem;
+  }
+  nav .links {
+    margin: 0.1rem;
+  }
+  .blogs .blog-container {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 465px) {
+  nav {
+    padding: 0.5rem;
+  }
+  nav .links {
+    margin: 0.1rem;
+    font-size: 13px;
+    padding: 0.5rem;
+  }
+
+  .blogs .blog-container {
+    width: 90%;
+  }
+  
+  .blogs .blog-container .author-info h1 {
+    font-size: 25px;
+  }
 }
 
 @keyframes fadeIn {
   from {
-
     opacity: 0.2;
   }
   to {
