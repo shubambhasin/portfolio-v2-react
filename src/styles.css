@@ -260,11 +260,15 @@ nav .links:hover {
 
 /* **********************contact section***************** */
 
+.contact{
+  background: rgb(0, 0, 0);
+}
 .contact .contact-container {
   width: 60%;
   margin: 2rem auto;
   color: white;
   user-select: auto;
+ 
 }
 .contact .contact-container form {
   display: flex;
@@ -273,8 +277,7 @@ nav .links:hover {
   padding: 2rem 2rem;
   margin: 0 auto;
   border: 1px solid rgb(22, 22, 22);
-  border-radius: var(--border10px);
-  background: rgb(0, 0, 0);
+  border-radius: var(--border10px); background: rgb(27, 0, 27);
   animation-name: fadeIn;
   animation-duration: 1s;
 }
