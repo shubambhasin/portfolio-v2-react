@@ -94,9 +94,7 @@ nav .links:hover {
 }
 
 .info .info-div {
-
   flex: 60%;
-
 }
 
 .info .info-div h1 {
@@ -105,9 +103,11 @@ nav .links:hover {
   font-weight: 100;
 }
 .home .cover-container {
-  
   width: auto;
   flex: 40%;
+  animation: fadeIn;
+  animation-delay: 2s;
+  animation-duration: 3s;
 }
 .home .cover-container img {
   width: 100%;
@@ -283,7 +283,7 @@ nav .links:hover {
   background: rgb(0, 0, 0);
 }
 .contact .contact-container {
-  width: 60%;
+  width: 400px;
   margin: 2rem auto;
   color: white;
   user-select: auto;
@@ -356,9 +356,8 @@ nav .links:hover {
   .blogs .blog-container {
     width: 80%;
   }
-  .info .info-div h1
-  {
-font-size: 3.5rem;
+  .info .info-div h1 {
+    font-size: 3.5rem;
   }
   .go-to-project {
     right: 1rem;
@@ -372,13 +371,11 @@ font-size: 3.5rem;
     align-self: center;
   }
 }
-@media screen and (max-width: 674px)
-{
-  .info .info-div h1
-  {
-font-size: 3rem;
+@media screen and (max-width: 674px) {
+  .info .info-div h1 {
+    font-size: 3rem;
   }
-} 
+}
 @media screen and (max-width: 625px) {
   nav {
     padding: 0.5rem;
@@ -434,7 +431,6 @@ font-size: 3rem;
     flex: 60%;
   }
 
-  
   .info .cover-container {
     order: 1;
   }
@@ -506,6 +502,9 @@ font-size: 3rem;
   }
 }
 @media screen and (max-width: 465px) {
+  .contact .contact-container {
+    width: 300px;
+  }
   nav {
     padding: 0.5rem;
   }
@@ -525,10 +524,7 @@ font-size: 3rem;
   .blogs .blog-container .author-info h1 {
     font-size: 25px;
   }
-
 }
-
-
 
 @media screen and (max-width: 410px) {
   .info .info-div h1 {
@@ -536,26 +532,26 @@ font-size: 3rem;
   }
 }
 @media screen and (max-width: 376px) {
-  
-  .info
-  {
+  .info {
     align-content: center;
   }
-  .info .info-div
-  {
-    flex:80%;
+  .info .info-div {
+    flex: 80%;
     align-self: center;
     justify-self: center;
   }
   .info .info-div h1 {
     font-size: 2.5rem;
   }
-  .go-to-project
-  {
+  .go-to-project {
     position: static;
   }
-  
-  
+  .contact .contact-container {
+    width: 270px;
+    margin: 2rem auto;
+    color: white;
+    user-select: auto;
+  }
 }
 /* ******************keyframes***************** */
 @keyframes fadeIn {

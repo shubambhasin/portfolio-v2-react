@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div className="contact">
       <div className="contact-container">
-        <form>
+        <form  method="POST" data-netlify="true" data-netlify-recaptcha="true">
           <h2 style={{ textAlign: "left" }}>Get in Touch</h2>
 
           <input placeholder="Enter your name..." type="text" />
@@ -14,7 +14,8 @@ const Contact = () => {
           <br />
           <textarea placeholder="Enter your message" />
           <br />
-          <button>Send</button>
+          <div data-netlify-recaptcha="true"></div>
+          <button type="submit">Send</button>
         </form>
       </div>
     </div>
