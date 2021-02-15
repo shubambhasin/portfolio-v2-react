@@ -1,13 +1,8 @@
 import React from "react";
-import {
-  FaFacebook,
-  FaGithub,
-  FaInstagram,
-  FaLinkedin,
-  FaQuora
-} from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin, FaQuora } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { BlogData } from "../data/BlogsData";
+import Blog1 from "../data/Blogs/Blog1";
+import { BlogsData } from "../data/BlogsData";
 import "../styles.css";
 const Blogs = () => {
   return (
@@ -35,7 +30,7 @@ const Blogs = () => {
               rel="noreferrer"
               target="_blank"
             >
-              <FaLinkedin  size={28}/>
+              <FaLinkedin size={28} />
             </a>
             <a
               style={{ color: "rgb(32, 32, 32)" }}
@@ -55,11 +50,11 @@ const Blogs = () => {
             </a>
           </div>
         </div>
-        {BlogData.map((data) => {
+        {BlogsData.map((data) => {
           return (
             <div key={data.id} className="blog-tile">
               <div className="blog-header">
-                <Link to="/blogs">
+                <Link to={data.path}>
                   {" "}
                   <h1>{data.blogHeader}</h1>
                 </Link>
@@ -68,7 +63,7 @@ const Blogs = () => {
                 <small>{data.blogDate}</small>
               </p>
               <p>{data.blogScript}</p>
-              <Link to="/blogs" className="read-more">
+              <Link to={data.path} className="read-more">
                 <strong>Read more...</strong>
               </Link>
               <hr className="hr" size={1} />

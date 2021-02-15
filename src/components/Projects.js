@@ -9,7 +9,7 @@ const Projects = () => {
       <div className="project-container">
         {ProjectData.map((data) => {
           return (
-            <div key={data.key} className="tile">
+            <div key={data.id} className="tile">
               <img
                 className="project-icon"
                 src={data.projectImage}

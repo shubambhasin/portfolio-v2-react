@@ -5,6 +5,9 @@ import Contact from "./components/Contact";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
+import Blog1 from "./data/Blogs/Blog1";
+import Blog2 from "./data/Blogs/Blog2";
+import Blog3 from "./data/Blogs/Blog3";
 
 import "./styles.css";
 
@@ -16,11 +19,15 @@ export default function App() {
        
 
         <Switch>
-          <Route path="/contact" component={Contact}/>
-          <Route path="/aboutme" component={AboutMe}/>
-          <Route path="/blogs" component={Blogs}/>
-          <Route path="/projects" component={Projects}/>
-          <Route path="/" component={Home} />
+          <Route path="/contact" exact component={Contact}/>
+          <Route path="/aboutme" exact component={AboutMe}/>
+          <Route path="/blogs" exact component={Blogs}/>
+          <Route path="/projects" exact component={Projects}/>
+          <Route path="/" exact component={Home} />
+          <Route path ="/blogs/blog1" exact component={Blog1}/>
+          <Route path ="/blogs/blog2" exact component={Blog2}/>
+          <Route path ="/blogs/blog3" exact component={Blog3}/>
+            
         </Switch>
         
 

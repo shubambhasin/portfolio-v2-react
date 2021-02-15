@@ -82,6 +82,9 @@ nav .links:hover {
   position: relative;
 }
 .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 80%;
   height: 80%;
   position: absolute;
@@ -95,6 +98,16 @@ nav .links:hover {
   font-family: "Dancing Script", cursive;
   font-size: 5rem;
   font-weight: 100;
+}
+.home .cover-container
+{
+  justify-self: center;
+}
+
+.home .cover-container img
+{
+  width: auto;
+  height: 100%;
 }
 .info .button {
   top: 2rem;
@@ -224,6 +237,7 @@ nav .links:hover {
   align-items: flex-start;
   justify-content: center;
   width: 70%;
+  height: auto;
   margin: 2rem auto;
 }
 .blogs .blog-container .author-info {
@@ -244,7 +258,7 @@ nav .links:hover {
   padding: 0.5rem;
   margin: 0rem 1rem;
   animation-name: fadeIn;
-  animation-duration: 2s;
+  animation-duration: 1s;
 }
 .blogs .blog-container .blog-tile .read-more {
   color: rgb(36, 36, 48);

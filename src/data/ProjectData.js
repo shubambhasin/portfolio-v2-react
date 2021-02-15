@@ -8,7 +8,7 @@ export const ProjectData = [
     appUrl: "https://manage-tasks.netlify.app/",
     appCode: "https://github.com/shubambhasin/TODO",
     projectImage:
-      "https://lh3.googleusercontent.com/proxy/eVKuezP5YPzmZ8waaGg4CYd1ybx4bvt79qZWWZXltdj_YSafje5Yk7gpqZnV8ekUJeUQvJf36Bd4bUdAwMrMhyHgpluPvUinJi-flgeF7wQ0bXC7XU_r4A",
+      "https://images.unsplash.com/photo-1492551557933-34265f7af79e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
     id: "3"
   },
   {
@@ -19,7 +19,7 @@ export const ProjectData = [
     appUrl: "https://all-in-one-translator.netlify.app/",
     appCode: "https://github.com/shubambhasin/All-in-one-transalator",
     projectImage:
-      "https://lh3.googleusercontent.com/proxy/eVKuezP5YPzmZ8waaGg4CYd1ybx4bvt79qZWWZXltdj_YSafje5Yk7gpqZnV8ekUJeUQvJf36Bd4bUdAwMrMhyHgpluPvUinJi-flgeF7wQ0bXC7XU_r4A",
+    "https://images.unsplash.com/photo-1492551557933-34265f7af79e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
     id: "2"
   },
   {
@@ -30,7 +30,7 @@ export const ProjectData = [
     appUrl: "https://apod-shubam.netlify.app/",
     appCode: "https://github.com/shubambhasin/Space-Observatory",
     projectImage:
-      "https://lh3.googleusercontent.com/proxy/eVKuezP5YPzmZ8waaGg4CYd1ybx4bvt79qZWWZXltdj_YSafje5Yk7gpqZnV8ekUJeUQvJf36Bd4bUdAwMrMhyHgpluPvUinJi-flgeF7wQ0bXC7XU_r4A",
+    "https://images.unsplash.com/photo-1492551557933-34265f7af79e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
     id: "1"
   }
 ];
