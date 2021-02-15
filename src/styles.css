@@ -84,7 +84,6 @@ nav .links:hover {
 .info {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 80%;
   height: 80%;
   position: absolute;
@@ -94,20 +93,26 @@ nav .links:hover {
   transition: ease-in;
 }
 
-.info h1 {
-  font-family: "Dancing Script", cursive;
-  font-size: 5rem;
-  font-weight: 100;
-}
-.home .cover-container
-{
-  justify-self: center;
+.info .info-div {
+
+  flex: 60%;
+
 }
 
-.home .cover-container img
-{
+.info .info-div h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 4.5rem;
+  font-weight: 100;
+}
+.home .cover-container {
+  
   width: auto;
+  flex: 40%;
+}
+.home .cover-container img {
+  width: 100%;
   height: 100%;
+  margin: auto 0;
 }
 .info .button {
   top: 2rem;
@@ -274,7 +279,7 @@ nav .links:hover {
 
 /* **********************contact section***************** */
 
-.contact{
+.contact {
   background: rgb(0, 0, 0);
 }
 .contact .contact-container {
@@ -282,7 +287,6 @@ nav .links:hover {
   margin: 2rem auto;
   color: white;
   user-select: auto;
- 
 }
 .contact .contact-container form {
   display: flex;
@@ -291,7 +295,8 @@ nav .links:hover {
   padding: 2rem 2rem;
   margin: 0 auto;
   border: 1px solid rgb(22, 22, 22);
-  border-radius: var(--border10px); background: rgb(27, 0, 27);
+  border-radius: var(--border10px);
+  background: rgb(27, 0, 27);
   animation-name: fadeIn;
   animation-duration: 1s;
 }
@@ -342,16 +347,38 @@ nav .links:hover {
   .blogs .blog-container {
     width: 75%;
   }
+  .home .cover-container img {
+    width: 100%;
+    height: 100%;
+  }
 }
 @media screen and (max-width: 775px) {
   .blogs .blog-container {
     width: 80%;
   }
+  .info .info-div h1
+  {
+font-size: 3.5rem;
+  }
   .go-to-project {
     right: 1rem;
     bottom: 8rem;
   }
+  .home .cover-container img {
+    width: 90%;
+    height: 90%;
+  }
+  .home .cover-container {
+    align-self: center;
+  }
 }
+@media screen and (max-width: 674px)
+{
+  .info .info-div h1
+  {
+font-size: 3rem;
+  }
+} 
 @media screen and (max-width: 625px) {
   nav {
     padding: 0.5rem;
@@ -398,6 +425,21 @@ nav .links:hover {
   }
 
   .info {
+    flex-direction: column;
+  }
+
+  .info .info-div {
+    justify-self: flex-start;
+    order: 2;
+    flex: 60%;
+  }
+
+  
+  .info .cover-container {
+    order: 1;
+  }
+
+  .info {
     align-content: center;
     justify-self: center;
 
@@ -410,7 +452,7 @@ nav .links:hover {
     transition: ease-in;
   }
 
-  .info h1 {
+  .info .info-div h1 {
     font-family: "Dancing Script", cursive;
     font-size: 4.5rem;
     font-weight: 100;
@@ -424,14 +466,15 @@ nav .links:hover {
   }
 
   .go-to-project {
-    position: static;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
     animation-name: rightToLeft;
     animation-duration: 2s;
     justify-self: center;
   }
   .go-to-project .links {
     color: white;
-    margin-left: 1rem;
     padding: 0.5rem 1rem;
     border: 1px solid var(--textColor);
     transition: border 0.3s;
@@ -452,7 +495,7 @@ nav .links:hover {
     margin: 0.1rem;
   }
 
-  .info h1 {
+  .info .info-div h1 {
     font-family: "Dancing Script", cursive;
     font-size: 4rem;
     font-weight: 100;
@@ -471,7 +514,7 @@ nav .links:hover {
     font-size: 13px;
     padding: 0.5rem;
   }
-  .info h1 {
+  .info .info-div h1 {
     font-size: 3.5rem;
   }
 
@@ -482,12 +525,37 @@ nav .links:hover {
   .blogs .blog-container .author-info h1 {
     font-size: 25px;
   }
+
 }
 
+
+
 @media screen and (max-width: 410px) {
-  .info h1 {
+  .info .info-div h1 {
     font-size: 3rem;
   }
+}
+@media screen and (max-width: 376px) {
+  
+  .info
+  {
+    align-content: center;
+  }
+  .info .info-div
+  {
+    flex:80%;
+    align-self: center;
+    justify-self: center;
+  }
+  .info .info-div h1 {
+    font-size: 2.5rem;
+  }
+  .go-to-project
+  {
+    position: static;
+  }
+  
+  
 }
 /* ******************keyframes***************** */
 @keyframes fadeIn {

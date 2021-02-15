@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef} from "react";
 import { FaArrowDown, FaGithub, FaPhone } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import cover from "../images/cover.svg";
@@ -10,7 +10,7 @@ const Home = () => {
     <div>
       <div className="home">
         <div className="info">
-          <div>
+          <div className="info-div">
             <h1>Shubam Bhasin</h1>
             <p>Web Developer</p>
             <small>JavaScript | React | HTML | CSS </small>
@@ -22,7 +22,7 @@ const Home = () => {
             </a>
           </div>
           <div className="cover-container">
-            <img src={cover} alt="cover" className="cover-img" />
+            <img src={cover} alt="cover-poster" />
           </div>
         </div>
         <div className="go-to-project">
@@ -40,7 +40,8 @@ const Home = () => {
           </Link>
         </div>
       </div>
-      <Skills />
+      <div id="skills"></div>
+      <Skills  />
     </div>
   );
 };
