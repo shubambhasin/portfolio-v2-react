@@ -1,5 +1,5 @@
 import React, {useRef} from "react";
-import { FaArrowDown, FaGithub, FaPhone } from "react-icons/fa";
+import { FaArrowUp, FaGithub, FaPhone } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import cover from "../images/cover.svg";
 import Skills from "./Skills";
@@ -16,10 +16,10 @@ const Home = () => {
             <small>JavaScript | React | HTML | CSS </small>
             <br />
             <br />
-            <a href="#skills" className="button">
+            <button href="#skills" className="button" disabled>
               {" "}
-              More Details <FaArrowDown skills={28} />
-            </a>
+              Swipe Up <FaArrowUp skills={28} />
+            </button>
           </div>
           <div className="cover-container">
             <img src={cover} alt="cover-poster" />

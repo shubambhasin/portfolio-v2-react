@@ -106,8 +106,8 @@ nav .links:hover {
   width: auto;
   flex: 40%;
   animation: fadeIn;
-  animation-delay: 2s;
-  animation-duration: 3s;
+
+  animation-duration: 2s;
 }
 .home .cover-container img {
   width: 100%;
@@ -271,12 +271,48 @@ nav .links:hover {
 /* ********************about me***************************** */
 
 .aboutMe {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   width: 70%;
   margin: 2rem auto;
+  animation-name: fadeIn;
+  animation-duration: 1s;
 }
+.aboutMe .info-and-img {
+  display: flex;
+  justify-content: center;
 
+  margin: 5px;
+  padding: 5px;
+}
+.aboutMe .info-and-img .small-info {
+  flex: 50%;
+  word-wrap: wrap;
+  justify-self: flex-start;
+  padding: 5px;
+  border-radius: var(--border5px);
+
+  border: 1px solid rgb(37, 37, 37);
+}
+.aboutMe .info-and-img .my-image {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
+.aboutMe .info-and-img .my-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+  
+}
+.my-info {
+  border: 1px solid rgb(37, 37, 37);
+  border-radius: var(--border5px);
+  margin: 5px;
+  padding: 5px;
+}
 /* **********************contact section***************** */
 
 .contact {
@@ -370,6 +406,10 @@ nav .links:hover {
   .home .cover-container {
     align-self: center;
   }
+  .info-and-img
+{
+  flex-direction: column;
+}
 }
 @media screen and (max-width: 674px) {
   .info .info-div h1 {
@@ -463,7 +503,7 @@ nav .links:hover {
 
   .go-to-project {
     position: absolute;
-    right: 1rem;
+    right: 6rem;
     bottom: 1rem;
     animation-name: rightToLeft;
     animation-duration: 2s;
@@ -480,6 +520,10 @@ nav .links:hover {
     border: 1px solid black;
     border-radius: var(--border5px);
     box-shadow: 0px 0px 5px 1px rgb(92, 92, 92);
+  }
+  .aboutMe .info-and-img .my-image img {
+    width: 180px;
+    height: 180px;
   }
 }
 
@@ -500,6 +544,11 @@ nav .links:hover {
   .blogs .blog-container {
     width: 85%;
   }
+  
+  .aboutMe .info-and-img .my-image img {
+    width: 150px;
+    height: 150px;
+   }
 }
 @media screen and (max-width: 465px) {
   .contact .contact-container {
@@ -529,6 +578,12 @@ nav .links:hover {
 @media screen and (max-width: 410px) {
   .info .info-div h1 {
     font-size: 3rem;
+  }
+  
+  .aboutMe .info-and-img .my-image img {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 376px) {

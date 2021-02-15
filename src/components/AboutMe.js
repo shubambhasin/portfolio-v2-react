@@ -3,27 +3,37 @@ import React from "react";
 const AboutMe = () => {
   return (
     <div className="aboutMe">
+      <h1>Who AM I ?</h1>
 
-<h1>Who AM I ?</h1>
-      <div className="my-image">
-        <img src="" alt="meri-shakal" />
+      <div className="info-and-img">
+        <div className="small-info">
+          <p>
+            <strong>Shubam Bhasin</strong>
+            <br />
+            <small>React | Javascript</small>
+            <br />
+            <small>HTML | CSS | Bootstrap </small>
+          </p>
+        </div>
+        <div className="my-image">
+          <img
+            // src="https://semantic-ui.com/images/avatar2/large/matthew.png"
+            src="https://images.pexels.com/users/avatars/1091152/shubam-bhasin-570.jpeg?auto=compress&fit=crop&h=256&w=256"
+            alt="meri-shakal"
+          />
+        </div>
       </div>
-      <div className="small-info">
-        <p>
-          Sensus quod in eo quasi lumen aliquod probitatis et virtutis videtis;
-          hoc vere tamen licet dicere, p. scipioni ex multis diebus, quos in
-          vita.
-        </p>
-      </div>
+
       <div className="my-info">
         <p>
-          Sensus exstitit amoris, si aliquem nacti sumus cuius cum moribus et
-          natura congruamus, quod in eo quasi lumen aliquod probitatis et
-          virtutis perspicere videamur. quam ob rem vita quidem talis fuit vel
-          fortuna vel gloria, ut nihil posset accedere, moriendi autem sensum
-          celeritas abstulit; quo de genere mortis difficile dictu est; quid
-          homines suspicentur, videtis; hoc vere tamen licet dicere, p. scipioni
-          ex multis diebus, quos in vita.
+          I am a Web developer, Programmer, music lover and a part time blogger
+          currently living in Union territory of Jammu and Kashmir. I have done
+          my B.Tech in Electronics and Communication Engineering from NIT
+          Srinagar. Apart from that I have keen interest in Web, Web Apps. These
+          days I am in ❤️ with JavaScript and its Frameworks. So each day I dive
+          in the world of JavaScript and take a chunk out of it. Actively
+          Learning them and applying them. You can click on the project section
+          to have a look on number of things I have made. Or click Below.
         </p>
       </div>
     </div>
