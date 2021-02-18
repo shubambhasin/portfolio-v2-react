@@ -60,11 +60,10 @@ body {
   background: var(--text-whiteForDark);
   color: var(--text-whiteForDark);
 }
+
+
 .backToMain {
-  position: absolute;
-  right: 10rem;
-  top: 10rem;
-  color: white;
+ 
 }
 /* .home
 {
@@ -402,6 +401,25 @@ nav .links:hover {
   animation-name: fadeIn;
   animation-duration: 1s;
   transition: ease;
+}
+.design-header
+{
+  display: flex;
+text-align: center;
+justify-content: center;
+align-items: center;
+
+
+}
+.design-header h1
+{
+  font-weight: lighter;
+}
+.design-header .backToMain
+{
+position: absolute;
+color: white;
+right: 2rem;
 }
 
 .design-container {

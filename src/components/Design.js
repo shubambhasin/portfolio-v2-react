@@ -6,18 +6,14 @@ import "../styles.css";
 const Design = () => {
   return (
     <div className="design">
-      <h1
-        style={{
-          margin: "2rem auto",
-          textAlign: "center",
-          fontWeight: "lighter"
-        }}
-      >
-        I am design
-      </h1>{" "}
-      <Link to="/projects/" className="backToMain">
-        <FaArrowAltCircleLeft size={42} />
-      </Link>
+      <div className="design-header">
+        <h1>
+          I am design
+        </h1>
+        <Link to="/projects/" className="backToMain">
+          <FaArrowAltCircleLeft size={28}  title='Back to project' />
+        </Link>
+      </div>
       <div className="design-container">
         {DesignData.map((design) => {
           return (
