@@ -41,6 +41,7 @@ hr {
 .photoshop {
   color: rgb(0, 102, 255);
 }
+
 /* *******************main****************************** */
 body {
   user-select: none;
@@ -55,11 +56,15 @@ body {
   background: #000;
 }
 
-.light 
-{
+.light {
   background: var(--text-whiteForDark);
-color: var(--text-whiteForDark);
-
+  color: var(--text-whiteForDark);
+}
+.backToMain {
+  position: absolute;
+  right: 10rem;
+  top: 10rem;
+  color: white;
 }
 /* .home
 {
@@ -67,8 +72,6 @@ color: var(--text-whiteForDark);
 color: var(--text-whiteForDark);
 
 } */
-
-
 
 nav {
   padding: 1rem;
@@ -323,7 +326,6 @@ nav .links:hover {
   height: 200px;
   border-radius: 50%;
   margin: 0 auto;
-  
 }
 .my-info {
   border: 1px solid rgb(37, 37, 37);
@@ -388,13 +390,51 @@ nav .links:hover {
   border-radius: var(--border5px);
 }
 /* *********************Design******************* */
+.go-to-designs {
+  color: white;
+  border-radius: var(--border5px);
+  margin-left: 3rem;
+  padding: 1rem;
+  transition: 0.5s;
+}
 
-.design
-{
+.design {
   animation-name: fadeIn;
   animation-duration: 1s;
-transition: ease;
+  transition: ease;
 }
+
+.design-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 80%;
+
+  margin: 0 auto;
+  gap: 2rem;
+}
+.design-container .designs {
+  flex: 45%;
+  border-radius: var(--border10px);
+  padding: 1rem;
+  border: none;
+  box-shadow: 1px 1px 10px rgb(55, 55, 55);
+}
+.designs img {
+  width: 100%;
+  height: auto;
+}
+.go-to-designs:hover {
+  color: rgb(192, 192, 192);
+  box-shadow: 1px 1px 5px 0px rgb(48, 48, 48);
+}
+
+.primary-button {
+  padding: 0.5rem 1rem;
+  font-size: large;
+  outline: none;
+  color: var(--text-whiteForDark);
+}
+
 /* *****************media queries********************** */
 
 @media screen and (max-width: 1085px) {
@@ -431,10 +471,9 @@ transition: ease;
   .home .cover-container {
     align-self: center;
   }
-  .info-and-img
-{
-  flex-direction: column;
-}
+  .info-and-img {
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 674px) {
   .info .info-div h1 {
@@ -569,11 +608,11 @@ transition: ease;
   .blogs .blog-container {
     width: 85%;
   }
-  
+
   .aboutMe .info-and-img .my-image img {
     width: 150px;
     height: 150px;
-   }
+  }
 }
 @media screen and (max-width: 465px) {
   .contact .contact-container {
@@ -604,7 +643,7 @@ transition: ease;
   .info .info-div h1 {
     font-size: 3rem;
   }
-  
+
   .aboutMe .info-and-img .my-image img {
     width: 140px;
     height: 140px;
