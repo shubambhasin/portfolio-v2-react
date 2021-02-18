@@ -7,7 +7,13 @@ const Projects = () => {
 
   return (
     <div className="projects">
-      <Link to="/projects/design" className="go-to-designs">For Design project Click here !</Link>
+      <Link to="/projects/design" className="go-to-designs">
+        For Design project Click here !
+      </Link>
+      <Link to="/projects/design" className="go-to-designs-hidden">
+        Go to designs !
+      </Link>
+
 
       <div className="project-container">
         {ProjectData.map((data) => {

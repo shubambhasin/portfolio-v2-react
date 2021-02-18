@@ -1,27 +1,54 @@
 export const DesignData = [
+
   {
-    projectName: "MovieDB Search Engine",
-    date: "January 2021",
+    projectName: "Landing Page for a UI/UX company",
+    date: "Februaty 2021",
     projectInfo1:
-      "This apps helps in searching infomation of the movie by typing name of mvie / actor / director anything that is related with any movie ",
-    projectInfo2: "Currently in beta",
-    appUrl: "https://csb-foft0-50qo809zf.vercel.app/",
-    appCode: "https://github.com/shubambhasin/movie-search",
+      "A static website with focus on front-end, built with HTML and pure CSS",
+    projectInfo2: "Click in the link below to see it live",
+    appUrl: "https://dribbble-design1.netlify.app/",
+    appCode: "https://github.com/shubambhasin/Dribble-Design",
     projectImage:
-      "https://images.unsplash.com/photo-1492551557933-34265f7af79e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
-    id: "2"
+      "https://raw.githubusercontent.com/shubambhasin/Dribble-Design/main/Screenshot%20(232).png",
+    id: "4"
   },
   {
-    projectName: "MovieDB Search Engine",
+    projectName: "English Course Website",
+    date: "Februaty 2021",
+    projectInfo1:
+      "A static website with focus on front-end, built with HTML and pure CSS. Focused on Desktop",
+    projectInfo2: "Click on the links below to see more...",
+    appUrl: "https://dribble-design2.netlify.app/",
+    appCode: "https://github.com/shubambhasin/Dribbble-design-two",
+    projectImage:
+      "https://raw.githubusercontent.com/shubambhasin/Dribbble-design-two/main/Screenshot%20(233).png",
+    id: "3"
+  },
+  {
+    projectName: "Working Keyboard UI",
     date: "January 2021",
     projectInfo1:
-      "This apps helps in searching infomation of the movie by typing name of mvie / actor / director anything that is related with any movie ",
-    projectInfo2: "Currently in beta",
-    appUrl: "https://csb-foft0-50qo809zf.vercel.app/",
-    appCode: "https://github.com/shubambhasin/movie-search",
+      "A full fledged working keyboard built in CSS, uses Semantic-UI for grids.",
+    projectInfo2: "Hover on the keys to see how it works.",
+    appUrl: "https://keyboardd.netlify.app/",
+    appCode: "https://github.com/shubambhasin/Keyboard-css",
     projectImage:
-      "https://images.unsplash.com/photo-1492551557933-34265f7af79e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+      "https://raw.githubusercontent.com/shubambhasin/Keyboard-css/main/Screenshot%20(222).png",
+    id: "2"
+  },
+
+  {
+    projectName: "GitHub Login Page",
+    date: "January 2021",
+    projectInfo1:
+      "Github Login page made from scratch using HTML and CSS",
+    projectInfo2: "Details below",
+    appUrl: "https://github-page-login.netlify.app/",
+    appCode: "https://github.com/shubambhasin/Github-login-page",
+    projectImage:
+      "https://raw.githubusercontent.com/shubambhasin/RepoHub/main/Screenshot%20(239).png",
     id: "1"
   }
+ 
 
 ]

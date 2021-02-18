@@ -1,5 +1,5 @@
 import React from "react";
-import { FaAccusoft, FaArrowAltCircleLeft } from "react-icons/fa";
+import { FaArrowAltCircleLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { DesignData } from "../data/DesignData";
 import "../styles.css";

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { FaBootstrap, FaCss3, FaHtml5, FaJs, FaReact } from "react-icons/fa";
 import { DiPhotoshop } from "react-icons/di";
 
@@ -18,7 +18,7 @@ const Home = () => {
             <small>JavaScript | React | HTML | CSS </small>
             <br />
             <br />
-            <button href="#skills" className="button">
+            <button href="#skill" className="button">
               {" "}
               Swipe Up <FaArrowUp skills={28} />
             </button>
@@ -42,8 +42,7 @@ const Home = () => {
           </Link>
         </div>
       </div>
-
-      <div className="skills" id="skills">
+      <div className="skills">
         <h1>Skills</h1>
 
         <div className="skills-section">
