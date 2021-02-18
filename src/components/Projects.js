@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { ProjectData } from "../data/ProjectData";
 import "../styles.css"
 const Projects = () => {
@@ -6,6 +7,9 @@ const Projects = () => {
 
   return (
     <div className="projects">
+
+      <Link to="/projects/design">For Design project Click here !</Link>
+
       <div className="project-container">
         {ProjectData.map((data) => {
           return (

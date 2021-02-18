@@ -9,7 +9,10 @@ html {
   --text-grey: rgb(63, 63, 63);
   --border5px: 5px;
   --border10px: 10px;
+  --textColorForDark: rgb(41, 41, 41);
+  --text-whiteForDark: rgb(241, 241, 241);
 }
+
 .links,
 a {
   text-decoration: none;
@@ -51,6 +54,21 @@ body {
 .App {
   background: #000;
 }
+
+.light 
+{
+  background: var(--text-whiteForDark);
+color: var(--text-whiteForDark);
+
+}
+/* .home
+{
+  background: var(--text-whiteForDark);
+color: var(--text-whiteForDark);
+
+} */
+
+
 
 nav {
   padding: 1rem;
@@ -369,7 +387,14 @@ nav .links:hover {
   background: rgb(0, 217, 255);
   border-radius: var(--border5px);
 }
+/* *********************Design******************* */
 
+.design
+{
+  animation-name: fadeIn;
+  animation-duration: 1s;
+transition: ease;
+}
 /* *****************media queries********************** */
 
 @media screen and (max-width: 1085px) {

@@ -1,14 +1,16 @@
-import React, {useRef} from "react";
+import React, { useRef } from "react";
+import { FaBootstrap, FaCss3, FaHtml5, FaJs, FaReact } from "react-icons/fa";
+import { DiPhotoshop } from "react-icons/di";
+
 import { FaArrowUp, FaGithub, FaPhone } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import cover from "../images/cover.svg";
-import Skills from "./Skills";
 import "../styles.css";
 
 const Home = () => {
   return (
     <div>
-      <div className="home">
+      <div className={`home`}>
         <div className="info">
           <div className="info-div">
             <h1>Shubam Bhasin</h1>
@@ -16,7 +18,7 @@ const Home = () => {
             <small>JavaScript | React | HTML | CSS </small>
             <br />
             <br />
-            <button href="#skills" className="button" disabled>
+            <button href="#skills" className="button">
               {" "}
               Swipe Up <FaArrowUp skills={28} />
             </button>
@@ -40,8 +42,37 @@ const Home = () => {
           </Link>
         </div>
       </div>
-      <div id="skills"></div>
-      <Skills  />
+
+      <div className="skills" id="skills">
+        <h1>Skills</h1>
+
+        <div className="skills-section">
+          <div className="skill">
+            <FaHtml5 size={84} className="html5" />
+            <p>HTML</p>
+          </div>
+          <div className="skill">
+            <FaCss3 size={70} className="css" />
+            <p>CSS</p>
+          </div>
+          <div className="skill">
+            <FaJs size={84} className="js" />
+            <p>JavaScript</p>
+          </div>
+          <div className="skill">
+            <FaReact size={84} className="react" />
+            <p>React</p>
+          </div>
+          <div className="skill">
+            <FaBootstrap size={84} className="bootstrap" />
+            <p>Bootstrap</p>
+          </div>
+          <div className="skill">
+            <DiPhotoshop size={84} className="photoshop" />
+            <p>Adobe Photoshop</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
