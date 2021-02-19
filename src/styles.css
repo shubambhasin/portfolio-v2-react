@@ -73,26 +73,36 @@ color: var(--text-whiteForDark);
 nav {
   padding: 1rem;
   display: flex;
-
   justify-content: center;
 }
 nav .links {
   margin: 1rem;
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
-  border: 1px solid black;
+  /* border: 1px solid rgb(196, 196, 196); */
   padding: 0.5rem 1rem;
-  border: 1px solid black;
-  transition: border 0.7s ease;
-  outline: none;
-  user-select: none;
-  animation-name: colorShift;
-  animation-duration: 2s;
-  transition: 0.3s ease-in;
+  position: relative;
+  background: rgb(255, 255, 255);
+  border-radius: var(--border5px);
+  transition: 0.3s;
 }
-
-nav .links:hover {
-  border: 1px solid var(--textColor);
+nav .links:hover
+{
+  color: rgb(0, 0, 0);
+}
+nav .links:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0%;
+  top: 0;
+  height: 100%;
+  background: rgba(228, 61, 0, 0.7);
+  transition: 0.3s ease-in;
+  z-index: 10;
+}
+nav .links:hover:before {
+  width: 100%;
 }
 /* ***************home section =****************** */
 .home {
@@ -197,18 +207,14 @@ nav .links:hover {
 .projects .tile {
   background-image: linear-gradient(
     to right top,
-    #ff002c,
-    #ff3324,
+    #ff002b,
+    #ff1100,
     #ff4c1c,
-    #ff5f13,
-    #ff700a,
-    #ff691e,
-    #ff622b,
-    #ff5b35,
+    #ff7b00,
     #f93b4c,
     #eb1962,
     #d50076,
-    #b70087
+    #ff00bb
   );
   flex: 25%;
   margin: 1rem;
@@ -599,7 +605,7 @@ button {
   .home .go-to-project .links-circle {
     visibility: visible;
     margin: 2rem;
-    color: white;
+    color: rgb(255, 60, 0);
   }
 
   .go-to-project {

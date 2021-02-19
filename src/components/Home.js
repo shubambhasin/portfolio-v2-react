@@ -1,7 +1,7 @@
 import React from "react";
 import { FaBootstrap, FaCss3, FaHtml5, FaJs, FaReact } from "react-icons/fa";
 import { DiPhotoshop } from "react-icons/di";
-
+import { HashLink } from "react-router-hash-link";
 import { FaArrowUp, FaGithub, FaPhone } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import cover from "../images/cover.svg";
@@ -18,23 +18,26 @@ const Home = () => {
             <small>JavaScript | React | HTML | CSS </small>
             <br />
             <br />
-            <button href="#skill" className="button">
+
+            {/* **Here HashLink used is workaround for the same anchor tag scroll that is in html
+            reference---> https://github.com/ReactTraining/react-router/issues/394#issuecomment-370954737*** */}
+            <HashLink to="/home#skill" className="button">
               {" "}
               Swipe Up <FaArrowUp skills={28} />
-            </button>
+            </HashLink>
           </div>
           <div className="cover-container">
             <img src={cover} alt="cover-poster" />
           </div>
         </div>
         <div className="go-to-project">
-          <Link to="/projects" className="links">
+          <Link to="/projects" title="Go directly to project section" className="links">
             Project Section
           </Link>
           <Link to="/projects" className="links-circle">
             <FaGithub size={28} />
           </Link>
-          <Link className="links" to="/contact">
+          <Link className="links"  title="Contact form link" to="/contact">
             Contact Me
           </Link>
           <Link className="links-circle" to="/contact">
@@ -42,7 +45,7 @@ const Home = () => {
           </Link>
         </div>
       </div>
-      <div className="skills">
+      <div id="skill" className="skills">
         <h1>Skills</h1>
 
         <div className="skills-section">

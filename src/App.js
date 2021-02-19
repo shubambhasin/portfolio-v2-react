@@ -24,9 +24,9 @@ export default function App() {
           <Route path="/aboutme" exact component={AboutMe} />
           <Route path="/blogs" exact component={Blogs} />
           <Route path="/projects" exact component={Projects} />
-          
           <Route path="/projects/design" exact component={Design} />
           <Route path="/" exact component={Home} />
+          <Route path="/home" name="home-page" exact component={Home} />
           <Route path="/blogs/blog1" exact component={Blog1} />
           <Route path="/blogs/blog2" exact component={Blog2} />
           <Route path="/blogs/blog3" exact component={Blog3} />
