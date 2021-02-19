@@ -17,7 +17,7 @@ const Design = () => {
       <div className="design-container">
         {DesignData.map((design) => {
           return (
-            <div className="designs">
+            <div key={design.id} className="designs">
               <img src={design.projectImage} alt="somePic-for-project" />
               <h1>{design.projectName}</h1>
               <p>{design.projectInfo1}</p>
