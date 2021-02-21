@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div className="contact">
       <div className="contact-container">
-        <form netlify method="POST">
+        <form name= "contact" netlify >
           <h2 style={{ textAlign: "left" }}>Get in Touch</h2>
 
           <input placeholder="Enter your name..." type="text" />
