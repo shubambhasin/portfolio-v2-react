@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const AboutMe = () => {
   return (
@@ -35,6 +36,9 @@ const AboutMe = () => {
           Learning them and applying them. You can click on the project section
           to have a look on number of things I have made. Or click Below.
         </p>
+        <Link to="/projects" title="Go directly to project section" className="links">
+            Project Section
+          </Link>
       </div>
     </div>
   );

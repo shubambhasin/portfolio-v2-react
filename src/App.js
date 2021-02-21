@@ -10,7 +10,6 @@ import Projects from "./components/Projects";
 import Blog1 from "./data/Blogs/Blog1";
 import Blog2 from "./data/Blogs/Blog2";
 import Blog3 from "./data/Blogs/Blog3";
-
 import "./styles.css";
 
 export default function App() {
