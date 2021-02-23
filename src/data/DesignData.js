@@ -1,5 +1,16 @@
 export const DesignData = [
-
+  {
+    projectName: "Landing Page for a Business management Company",
+    date: "Februaty 2021",
+    projectInfo1:
+      "A static website with focus on front-end, built with HTML and pure CSS",
+    projectInfo2: "Click in the link below to see it live",
+    appUrl: "https://dribble-design3.netlify.app/",
+    appCode: "https://github.com/shubambhasin/Business-Management-landing-page",
+    projectImage:
+      "https://raw.githubusercontent.com/shubambhasin/Business-Management-landing-page/main/busniess-management-screenshot.png",
+    id: "4"
+  },
   {
     projectName: "Landing Page for a UI/UX company",
     date: "Februaty 2021",
@@ -40,15 +51,12 @@ export const DesignData = [
   {
     projectName: "GitHub Login Page",
     date: "January 2021",
-    projectInfo1:
-      "Github Login page made from scratch using HTML and CSS",
+    projectInfo1: "Github Login page made from scratch using HTML and CSS",
     projectInfo2: "Details below",
     appUrl: "https://github-page-login.netlify.app/",
     appCode: "https://github.com/shubambhasin/Github-login-page",
     projectImage:
-      "https://raw.githubusercontent.com/shubambhasin/RepoHub/main/Screenshot%20(239).png",
+      "https://raw.githubusercontent.com/shubambhasin/Github-login-page/main/githublogin.png",
     id: "1"
   }
- 
-
-]
+];
