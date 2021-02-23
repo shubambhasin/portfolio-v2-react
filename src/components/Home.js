@@ -31,13 +31,17 @@ const Home = () => {
           </div>
         </div>
         <div className="go-to-project">
-          <Link to="/projects" title="Go directly to project section" className="links">
+          <Link
+            to="/projects"
+            title="Go directly to project section"
+            className="links"
+          >
             Project Section
           </Link>
           <Link to="/projects" className="links-circle">
             <FaGithub size={28} />
           </Link>
-          <Link className="links"  title="Contact form link" to="/contact">
+          <Link className="links" title="Contact form link" to="/contact">
             Contact Me
           </Link>
           <Link className="links-circle" to="/contact">

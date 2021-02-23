@@ -9,7 +9,7 @@ export const DesignData = [
     appCode: "https://github.com/shubambhasin/Business-Management-landing-page",
     projectImage:
       "https://raw.githubusercontent.com/shubambhasin/Business-Management-landing-page/main/busniess-management-screenshot.png",
-    id: "4"
+    id: "5"
   },
   {
     projectName: "Landing Page for a UI/UX company",
