@@ -226,11 +226,24 @@ nav .links:hover:before {
 .projects {
   margin-top: 2rem;
 }
+
+.projects .project-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 3rem;
+}
+.projects .project-nav .links-circle
+{
+  color: rgb(206, 7, 66);
+}
+
+
 .project-container {
   display: flex;
   flex-wrap: wrap;
   padding: 2rem;
 }
+
 
 .projects .tile {
   background-image: linear-gradient(
@@ -490,6 +503,8 @@ nav .links:hover:before {
   border-radius: var(--border5px);
 }
 /* *********************Design******************* */
+
+/* for changing the text on screen size change */
 .go-to-designs-hidden {
   display: none;
 }
@@ -822,7 +837,7 @@ button {
     animation-name: forHome;
     animation-duration: 2s;
   }
-  
+
   .info .info-div h1 {
     font-size: 2.5rem;
   }

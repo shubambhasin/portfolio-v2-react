@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaPhone } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { ProjectData } from "../data/ProjectData";
 import "../styles.css";
@@ -7,14 +8,21 @@ const Projects = () => {
 
   return (
     <div className="projects">
-      <Link to="/projects/design" className="go-to-designs">
-        For Design project Click here !
-      </Link>
-      <Link to="/projects/design" className="go-to-designs-hidden">
-        Go to designs !
-      </Link>
-
-
+      <span className="project-nav">
+        <Link to="/projects/design" className="go-to-designs">
+          For Design project Click here !
+        </Link>
+        <Link to="/projects/design" className="go-to-designs-hidden">
+          Go to designs !
+        </Link>
+        <Link
+          className="links-circle"
+         title="Go to contact section"
+          to="/contact"
+        >
+          <FaPhone size={28} />
+        </Link>
+      </span>
       <div className="project-container">
         {ProjectData.map((data) => {
           return (
