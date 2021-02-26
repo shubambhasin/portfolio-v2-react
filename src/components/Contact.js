@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 const Contact = () => {
+
+  const inputRef = useRef(null)
+
+useEffect(() => {
+    inputRef.current.focus()
+},[])
+
   return (
     <div className="contact">
       <div className="contact-container">
         <form name= "contact" netlify >
           <h2 style={{ textAlign: "left" }}>Get in Touch</h2>
 
-          <input placeholder="Enter your name..." type="text" />
+          <input ref={inputRef} placeholder="Enter your name..." type="text" />
           <br />
 
           <input placeholder="Enter your email..." type="email" />
