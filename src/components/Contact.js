@@ -11,7 +11,7 @@ useEffect(() => {
   return (
     <div className="contact">
       <div className="contact-container">
-        <form name= "contact" netlify >
+        <form name= "contact" action="https://formspree.io/f/xnqoknyl" method="POST"  netlify >
           <h2 style={{ textAlign: "left" }}>Get in Touch</h2>
 
           <input ref={inputRef} placeholder="Enter your name..." type="text" />
