@@ -363,6 +363,16 @@ nav .links:hover:before {
   width: 70%;
   height: auto;
   margin: 2rem auto;
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+}
+
+
+.blog-container p
+{
+
+  font-size: large;
+
 }
 .blogs .blog-container .author-info {
   margin-left: 1.5rem;
@@ -594,7 +604,12 @@ button {
   color: var(--text-grey);
   background: whitesmoke;
 }
+/* ***********markdown************ */
 
+.markdown
+{
+  font-size: larger;
+}
 /* *****************media queries********************** */
 
 @media screen and (max-width: 1085px) {

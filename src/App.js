@@ -26,7 +26,7 @@ export default function App() {
           <Route path="/projects/design" exact component={Design} />
           <Route path="/" exact component={Home} />
           <Route path="/home" name="home-page" exact component={Home} />
-          <Route path="/blogs/blog1" exact component={Blog1} />
+          <Route path="/blogs/centering-anything-in-css" exact component={Blog1} />
           <Route path="/blogs/blog2" exact component={Blog2} />
           <Route path="/blogs/blog3" exact component={Blog3} />
         </Switch>
