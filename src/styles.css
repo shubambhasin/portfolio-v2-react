@@ -44,7 +44,6 @@ hr {
 
 /* *******************main****************************** */
 body {
-  user-select: none;
   background: #000;
   color: white;
   margin: 0;
@@ -608,7 +607,11 @@ button {
 
 .markdown
 {
+  
   font-size: larger;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px 10px rgb(231, 231, 231)
 }
 /* *****************media queries********************** */
 
