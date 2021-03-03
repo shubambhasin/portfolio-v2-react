@@ -27,6 +27,7 @@ const Projects = () => {
         {ProjectData.map((data) => {
           return (
             <div key={data.id} className="tile">
+              <div className="tile-1">
               <img
                 className="project-icon"
                 src={data.projectImage}
@@ -36,12 +37,15 @@ const Projects = () => {
               <small>{data.date}</small>
               <p>{data.projectInfo1}</p>
               <p>{data.projectInfo2}</p>
-              <a href={data.appUrl} rel="noreferrer" target="_blank">
+              </div>
+             <div className="tile-2">
+             <a href={data.appUrl} rel="noreferrer" target="_blank">
                 View Live
               </a>
               <a href={data.appCode} rel="noreferrer" target="_blank">
                 View Code
               </a>
+             </div>
             </div>
           );
         })}

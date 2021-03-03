@@ -245,6 +245,10 @@ nav .links:hover:before {
 
 
 .projects .tile {
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
   background-image: linear-gradient(
     to right top,
     #ff002b,
