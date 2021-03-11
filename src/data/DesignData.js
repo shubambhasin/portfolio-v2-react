@@ -1,5 +1,17 @@
 export const DesignData = [
   {
+    projectName: "Twitter UI",
+    date: "March 2021",
+    projectInfo1:
+      "A fully responsive twitter UI with support for mobile screens, tablet screens and desktop",
+    projectInfo2: "Click in the link below to see it live",
+    appUrl: "https://twitters.netlify.app/",
+    appCode: "https://github.com/shubambhasin/Twitter-home-page",
+    projectImage:
+      "https://images.unsplash.com/photo-1492551557933-34265f7af79e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+    id: "7"
+  },
+  {
     projectName: "Landing Page for a Fashion company",
     date: "Februaty 2021",
     projectInfo1:
