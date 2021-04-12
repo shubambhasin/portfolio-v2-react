@@ -5,10 +5,10 @@ export const ProjectData = [
     projectInfo1:
       "This is my very own in-house CSS component library that I have built to help me and fellow people to easily build CSS component with minimum CSS ",
     projectInfo2: "Currently in beta",
-    appUrl: "https:easecss.netlify.app",
+    appUrl: "https://easecss.netlify.app",
     appCode: "https://github.com/shubambhasin/EasyCSS-docs",
     projectImage:
-      "https://raw.githubusercontent.com/shubambhasin/EasyCSS-docs/master/Screenshot%20(263).png?token=AICBXGLJEH3RF2APEDJUVSDAOSBCS",
+      "https://raw.githubusercontent.com/shubambhasin/EasyCSS-docs/master/Screenshot%20(263).png?token=AICBXGPFAAIBTHCUIW55F2LAOSCPE",
     id: "12"
   },
   {
