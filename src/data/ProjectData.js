@@ -1,5 +1,17 @@
 export const ProjectData = [
   {
+    projectName: "EaseCSS, Component library",
+    date: "March 2021",
+    projectInfo1:
+      "This is my very own in-house CSS component library that I have built to help me and fellow people to easily build CSS component with minimum CSS ",
+    projectInfo2: "Currently in beta",
+    appUrl: "https:easecss.netlify.app",
+    appCode: "https://github.com/shubambhasin/EasyCSS-docs",
+    projectImage:
+      "https://raw.githubusercontent.com/shubambhasin/EasyCSS-docs/master/Screenshot%20(263).png?token=AICBXGLJEH3RF2APEDJUVSDAOSBCS",
+    id: "12"
+  },
+  {
     projectName: "MovieDB Search Engine",
     date: "January 2021",
     projectInfo1:
