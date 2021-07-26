@@ -17,7 +17,7 @@ const Projects = () => {
         </Link>
         <Link
           className="links-circle"
-         title="Go to contact section"
+          title="Go to contact section"
           to="/contact"
         >
           <FaPhone size={28} />
@@ -28,24 +28,26 @@ const Projects = () => {
           return (
             <div key={data.id} className="tile">
               <div className="tile-1">
-              <img
-                className="project-icon"
-                src={data.projectImage}
-                alt="project-icon"
-              />
-              <h1>{data.projectName}</h1>
-              <small>{data.date}</small>
-              <p>{data.projectInfo1}</p>
-              <p>{data.projectInfo2}</p>
+                <img
+                  className="project-icon"
+                  src={data.projectImage}
+                  alt="project-icon"
+                />
+                <div>
+                  <h1>{data.projectName}</h1>
+                  <small>{data.date}</small>
+                  <p>{data.projectInfo1}</p>
+                  <p>{data.projectInfo2}</p>
+                  <div className="tile-2">
+                    <a href={data.appUrl} rel="noreferrer" target="_blank">
+                      View Live
+                    </a>
+                    <a href={data.appCode} rel="noreferrer" target="_blank">
+                      View Code
+                    </a>
+                  </div>
+                </div>
               </div>
-             <div className="tile-2">
-             <a href={data.appUrl} rel="noreferrer" target="_blank">
-                View Live
-              </a>
-              <a href={data.appCode} rel="noreferrer" target="_blank">
-                View Code
-              </a>
-             </div>
             </div>
           );
         })}

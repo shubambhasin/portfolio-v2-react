@@ -12,18 +12,6 @@ export const DesignData = [
     id: "6"
   },
   {
-    projectName: "Landing Page for a Fashion company",
-    date: "Februaty 2021",
-    projectInfo1:
-      "A landing page fr fashion wbesite, built with HTML and pure CSS",
-    projectInfo2: "Click in the link below to see it live",
-    appUrl: "https://fashioninbox.netlify.app/",
-    appCode: "https://github.com/shubambhasin/Fashion-outfit-store",
-    projectImage:
-      "https://raw.githubusercontent.com/shubambhasin/Fashion-outfit-store/main/Screenshot%20(243).png",
-    id: "6"
-  },
-  {
     projectName: "Landing Page for a Business management Company",
     date: "Februaty 2021",
     projectInfo1:

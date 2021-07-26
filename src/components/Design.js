@@ -8,7 +8,7 @@ const Design = () => {
     <div className="design">
       <div className="design-header">
         <h1>
-          I am design
+          I am design section
         </h1>
         <Link to="/projects/" className="backToMain">
           <FaArrowAltCircleLeft size={28}  title='Back to project' />

@@ -11,9 +11,9 @@ const AboutMe = () => {
           <p>
             <strong>Shubam Bhasin</strong>
             <br />
-            <small>React | Javascript</small>
+            <small>React | Javascript | Express | MongoDB</small>
             <br />
-            <small>HTML | CSS | Bootstrap </small>
+            <small>HTML | CSS | Bootstrap | Styled-Components </small>
           </p>
         </div>
         <div className="my-image">
@@ -27,18 +27,22 @@ const AboutMe = () => {
 
       <div className="my-info">
         <p>
-          I am a Web developer, Programmer, music lover and a part time blogger
-          currently living in Union territory of Jammu and Kashmir. I have done
-          my B.Tech in Electronics and Communication Engineering from NIT
-          Srinagar. Apart from that I have keen interest in Web, Web Apps. These
-          days I am in ❤️ with JavaScript and its Frameworks. So each day I dive
-          in the world of JavaScript and take a chunk out of it. Actively
-          Learning them and applying them. You can click on the project section
-          to have a look on number of things I have made. Or click Below.
+          I am a Web developer, Programmer and a Tech Blogger currently living
+          in Union territory of Jammu and Kashmir. I have done my B.Tech in
+          Electronics and Communication Engineering from NIT Srinagar. Apart
+          from that I have keen interest in Web, Web Apps. These days I am in ❤️
+          with JavaScript and its Frameworks. So each day I dive in the world of
+          JavaScript and take a chunk out of it. Actively Learning them and
+          applying them. You can click on the project section to have a look on
+          number of things I have made. Or click Below.
         </p>
-        <Link to="/projects" title="Go directly to project section" className="links">
-            Project Section
-          </Link>
+        <Link
+          to="/projects"
+          title="Go directly to project section"
+          className="links"
+        >
+          Project Section
+        </Link>
       </div>
     </div>
   );

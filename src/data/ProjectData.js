@@ -1,5 +1,17 @@
 export const ProjectData = [
   {
+    projectName: "Note-It - NotesApp with Rich features ",
+    date: "July 2021",
+    projectInfo1:
+      "This built with features like Notes adding, deleting, set tags, choose colors, search and sort using title, content, tags, colors, Sign in / Signin using secured JWT",
+    projectInfo2: "App works on all screens, built in MERN Stack",
+    appUrl: "https://motherstv.netlify.app/",
+    appCode: "https://letsnoteit.netlify.app/",
+    projectImage:
+      "https://raw.githubusercontent.com/shubambhasin/notes-app/master/Screenshot%20(280).png",
+    id: "14"
+  },
+  {
     projectName: "mothersTV - Video Library",
     date: "June 2021",
     projectInfo1:

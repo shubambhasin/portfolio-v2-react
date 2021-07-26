@@ -445,6 +445,19 @@ justify-content: space-between;
   margin: 5px;
   padding: 15px;
 }
+
+.tile-1 {
+  display: flex;
+  flex-direction: column;
+  /* gap: 2rem; */
+  justify-content: space-between;
+
+}
+.abfc{
+
+  margin-top: auto;
+
+}
 /* **********************contact section***************** */
 
 .contact {
