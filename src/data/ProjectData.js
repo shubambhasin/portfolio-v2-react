@@ -1,5 +1,29 @@
 export const ProjectData = [
   {
+    projectName: "mothersTV - Video Library",
+    date: "June 2021",
+    projectInfo1:
+      "This app is built using MERN stack with all the features of video player, liked videos, history, saved videos, playlist management, Sign in / Signin using secured JWT",
+    projectInfo2: "App works on all screens",
+    appUrl: "https://motherstv.netlify.app/",
+    appCode: "https://github.com/shubambhasin/care-tv",
+    projectImage:
+      "https://raw.githubusercontent.com/shubambhasin/care-tv/master/Screenshot%20(283).png",
+    id: "14"
+  },
+  {
+    projectName: "Cart4Mothers - An Ecommerce App",
+    date: "July 2021",
+    projectInfo1:
+      "This app is built using MERN stack with all the features of an ecommerce app like Cart, wishlist, profile management, Sign in / Signin using secured JWT",
+    projectInfo2: "App works on all screens",
+    appUrl: "https://cart4mothers.netlify.app/",
+    appCode: "https://github.com/shubambhasin/Shuu",
+    projectImage:
+      "https://raw.githubusercontent.com/shubambhasin/Shuu/development/Screenshot%20(282).png",
+    id: "13"
+  },
+  {
     projectName: "EaseCSS, Component library",
     date: "March 2021",
     projectInfo1:
@@ -8,7 +32,7 @@ export const ProjectData = [
     appUrl: "https://easecss.netlify.app",
     appCode: "https://github.com/shubambhasin/EasyCSS-docs",
     projectImage:
-      "https://raw.githubusercontent.com/shubambhasin/EasyCSS-docs/master/Screenshot%20(263).png?token=AICBXGPFAAIBTHCUIW55F2LAOSCPE",
+      "https://raw.githubusercontent.com/shubambhasin/Ease-css1/master/Screenshot%20(263).png",
     id: "12"
   },
   {
@@ -106,7 +130,7 @@ export const ProjectData = [
       "https://images.unsplash.com/photo-1492551557933-34265f7af79e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
     id: "6"
   },
-  
+
   {
     projectName: "Emoji Interpreter App",
     date: "December 2020",
@@ -119,7 +143,7 @@ export const ProjectData = [
       "https://images.unsplash.com/photo-1492551557933-34265f7af79e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
     id: "7"
   },
-  
+
   {
     projectName: "Game of thrones translator",
     date: "December 2020",
@@ -132,7 +156,7 @@ export const ProjectData = [
       "https://images.unsplash.com/photo-1492551557933-34265f7af79e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
     id: "8"
   },
-  
+
   {
     projectName: "Leap Year Checker using nodeJs and Chalk npm package",
     date: "December 2020",
@@ -145,5 +169,4 @@ export const ProjectData = [
       "https://images.unsplash.com/photo-1492551557933-34265f7af79e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
     id: "9"
   }
-
 ];
